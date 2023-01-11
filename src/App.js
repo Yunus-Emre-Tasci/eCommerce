@@ -3,6 +3,7 @@ import { BrowserRouter as Router,Routes,Route,Link, } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Signin from "./pages/Auth/Signin";
 import Signup from "./pages/Auth/Signup";
+import Products from "./pages/Products/Products";
 
 
 const App=()=>{
@@ -12,7 +13,7 @@ const App=()=>{
         <Navbar/>
         <div id="content">
         <Routes >
-          <Route path = "/" component = {Home}/>
+          <Route path = "/" element = {<Products/>}/>
           <Route path = "/signin" element = {<Signin/>}/>
           < Route path = "/signup"
           element = {
@@ -26,9 +27,6 @@ const App=()=>{
   )
 }
 
-function Home() {
-  return <h2 > Home </h2>;
-}
 
 export default App;
 
