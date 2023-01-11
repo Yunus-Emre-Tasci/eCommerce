@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from "./styles.module.css"
+import {
+    Button,
+    ButtonGroup
+} from '@chakra-ui/react'
 
 const Navbar = () => {
   return (
@@ -19,7 +23,9 @@ const Navbar = () => {
                 </li>
             </ul>
         </div>    
-        <div className='right'>Right</div>
+        <div className='right'>
+            <Button colorScheme='blue'>Login</Button>
+        </div>
     </nav>
   )
 }
