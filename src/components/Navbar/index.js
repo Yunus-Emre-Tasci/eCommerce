@@ -23,8 +23,13 @@ const Navbar = () => {
                 </li>
             </ul>
         </div>    
-        <div className='right'>
-            <Button colorScheme='blue'>Login</Button>
+        <div className={styles.right}>
+            <Link to="/signin">
+            <Button colorScheme='pink'>Login</Button>
+            </Link>
+            <Link to="/signup">
+            <Button colorScheme='pink'>Register</Button>
+            </Link>
         </div>
     </nav>
   )
